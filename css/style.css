@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 1em;
+    }
+
+    & body {
+        background-color: lightgray;
+
+        & nav {
+            width: 100%;
+            position: fixed;
+            background-color: white;
+            box-shadow: 0 1px 10px black;
+
+            .navbar {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .navbar__title {
+                    color: steelblue;
+                }
+
+                .navbar__links {
+                    display: flex;
+                    justify-content: space-between;
+                    list-style: none;
+
+                    .navbar__item {
+                        margin-right: 1em;
+                        
+                        > a {
+                            text-decoration: none;
+                            color: black;
+
+                            &:hover {
+                                color: steelblue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        & main {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+
+            .container {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+                .main-title {
+                    background-color: black;
+                    padding: 1em;
+                    color: white;
+                    border-radius: 1rem;
+    
+                    .color {
+                        color: steelblue;
+                    }
+                }
+            }
+
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            padding: 1em;
+            margin-top: 1em;
+            border-radius: 1rem;
+            border: 1px solid white;
+            box-shadow: 1px 1px 10px black;
+        }
+    }
+}
